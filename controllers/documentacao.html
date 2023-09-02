@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Documentação da API</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Documentação da API</a>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary">Usuário</button>
+                <button class="btn btn-primary">Tarefa</button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="card">
+        <h5 class="card-header">Rota /noticias/id/:id</h5>
+        <div class="card-body">
+          <h5 class="card-title">Rota para listar todos os usuários cadastrados</h5>
+          <p class="card-text">Essa rota lista todos os usuários do banco de dados com os atributos id_usuário, titulo, conteudo, autor e image.</p>
+          <p class="card-text">Exemplo de utilização da rota /noticias/id/:id<b>Metodo GET</b>
+          <p class="card-text">"id": 1,
+            "titulo": "eu nãoquero nem saber",
+            "conteudo": "eu sou jogador de bask",
+            "autor": "mirandaaaaaaaaaaaaaaaaaaaa",
+            "image": "https://images.pexels.com/photos/6894428/pexels-photo-6894428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}]</p>
+          <a href="/usuario" class="btn btn-primary">Rota /noticias/id/:id</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h5 class="card-header">Rota /noticias</h5>
+        <div class="card-body">
+          <h5 class="card-title">Rota para adicionar usuários</h5>
+          <p class="card-text">A função deste método adiciona id_usuário, titulo, conteudo, autor e image.</p>
+          <p class="card-text">Exemplo de utilização da rota /noticias<b>Metodo POST</b> :</p>
+          <p class="card-text">{
+            "titulo": "eu quero voce",
+            "conteudo": "voce",
+            "autor": "gabriel",
+          "image":"https://th.bing.com/th/id/OIP.6TJzwQ9qojYhi9gMqWMRyAHaE8?pid=ImgDet&rs=1"
+          }</p>  
+          <div class="input-group mb-1">
+            <span class="input-group-text" id="inputGroup-sizing-default">/noticias</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <a href="/usuario/email/" class="btn btn-primary">Buscar</a>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+        <div class="card">
+          <h5 class="card-header">Rota /noticias/id/:id</h5>
+          <div class="card-body">
+            <h5 class="card-title">Rota para Atualizar usuários</h5>
+            <p class="card-text">Essa método atualiza tods os atributos do banco de dados, como por exemplo: id_usuário, titulo, conteudo,autor e image. </p>
+            <p class="card-text">Exemplo de utilização da rota  /noticias/id/:id<b>Metodo PUT</b> :</p>
+            <p class="card-text">[{
+              "titulo": "baskete",
+              "conteudo": "bola",
+              "autor": "lucas",
+            "image":"//th.bing.com/th/id/OIP.J1fwDDZtb1lBoA2E5UjufAHaHa?pid=ImgDet&rs=1"
+            }]</p>
+            
+            <div class="input-group mb-1">
+              <span class="input-group-text" id="inputGroup-sizing-default"> /noticias/id/:id</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <a href="/usuario/email/" class="btn btn-primary">Buscar</a>
+            </div>
+          </div>
+        </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+            
+            <div class="card">
+              <h5 class="card-header">Rota /noticias/id/:id</h5>
+              <div class="card-body">
+                <h5 class="card-title">Rota para Deletar usuários</h5>
+                <p class="card-text">Essa método deleta tods os atributos do banco de dados, como por exemplo: id_usuário, titulo, conteudo,autor e image. </p>
+                <p class="card-text">Exemplo de utilização da rota /noticias/id/:id<b>Metodo DELETE</b> :</p>
+                <p class="card-text">{
+                  "titulo": "baskete",
+                  "conteudo": "bola",
+                  "autor": "lucas",
+                "image":"//th.bing.com/th/id/OIP.J1fwDDZtb1lBoA2E5UjufAHaHa?pid=ImgDet&rs=1"
+                }
+
+
+            <div class="input-group mb-1">
+              <span class="input-group-text" id="inputGroup-sizing-default">/noticias/id/:id</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <a href="/usuario/email/" class="btn btn-primary">Buscar</a>
+            </div>
+          </div>
+        </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
